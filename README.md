@@ -7,7 +7,7 @@ This script is set up to be configured via environment variables:
 
 It writes to `/tmp`.
 
-# "GMail isn't letting me log in!"
+## "GMail isn't letting me log in!"
 
 This is because GMail doesn't want you to give your password to third parties to access
 it on your behalf. There are two options to fix this:
@@ -16,8 +16,8 @@ it on your behalf. There are two options to fix this:
    a third party app might allow them to be compromised.
  - The better solution: turn on two-factor authentication for the account, and then set
    an application-specific password for wetransfer-slurp to use. This password is meant
-   only to be used by wetransfer-slurp, and can be revoked by you at any time, making
-   safer (if you think wetransfer-slurp has compromised its password, you can simply
+   only to be used by wetransfer-slurp, and can be revoked by you at any time, making it
+   safer (if you think wetransfer-slurp has compromised the password, you can simply
    imvalidate that password without locking yourself out completely).
 
 ## Running with Docker
@@ -34,4 +34,3 @@ docker run --rm \
     -v /your/desired/location:/tmp \
     wetransfer-slurp:latest
 ```
-
